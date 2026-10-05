@@ -1,8 +1,8 @@
-\usepackage[letterpaper,top=0.44in,bottom=0.42in,left=0.50in,right=0.50in]{geometry}
+\usepackage[letterpaper,margin=0.5in]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage[scaled=0.94]{helvet}
-\renewcommand{\familydefault}{\sfdefault}
+\usepackage[default]{lato}
+\usepackage{fontawesome5}
 \usepackage{microtype}
 \usepackage{enumitem}
 \usepackage{tabularx}
@@ -16,22 +16,22 @@
 \emergencystretch=1.5em
 \newcolumntype{Y}{>{\raggedright\arraybackslash}X}
 
-\titleformat{\section}{\Large\bfseries}{}{0pt}{}[\vspace{1pt}\titlerule]
-\titlespacing*{\section}{0pt}{7pt}{5pt}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{\titlerule\vspace{4pt}}
+\titlespacing*{\section}{0pt}{7pt}{4pt}
 
 \setlist[itemize]{leftmargin=1.35em,itemsep=0.7pt,topsep=2pt,parsep=0pt,partopsep=0pt}
 
 \newcommand{\cvheader}{%
   \begin{center}
-    {\Huge\bfseries Alistair Kung}\\[-1pt]
-    {\Large Software Engineer}\\[5pt]
-    \begin{tabularx}{\textwidth}{@{}YcY@{}}
-      \href{mailto:alistairckung@gmail.com}{alistairckung@gmail.com} &
-      \href{https://github.com/alistairkung}{github.com/alistairkung} &
-      \hfill\href{https://linkedin.com/in/alistair-kung}{linkedin.com/in/alistair-kung}
-    \end{tabularx}
+    {\LARGE\bfseries Alistair Kung}\\[-1pt]
+    Software Engineer\\[2pt]
+    \href{mailto:alistaircckung@gmail.com}{{\Large\faEnvelopeSquare}\enspace alistaircckung@gmail.com}
+    \hfill
+    \href{https://github.com/alistairkung}{\raisebox{-0.15\height}{\Large\faGithubSquare}\enspace github.com/alistairkung}
+    \hfill
+    \href{https://linkedin.com/in/alistair-kung}{\raisebox{-0.15\height}{\Large\faLinkedin}\enspace linkedin.com/in/alistair-kung}
   \end{center}
-  \vspace{-4pt}\hrule\vspace{1pt}
+  \vspace{-5pt}
 }
 
 \newcommand{\role}[4]{%
