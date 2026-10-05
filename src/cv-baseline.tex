@@ -1,0 +1,82 @@
+\documentclass[10pt]{article}
+\input{src/cv-style.tex}
+
+\begin{document}
+\cvheader
+
+\section*{Experience}
+\role{Currencycloud Ltd/Visa Ltd (Post Acquisition)}{London, UK}{Software Engineer (Visa Ltd. Aligned Role: Senior Software Engineer)}{May 2023 -- Sept 2025}
+\begin{itemize}
+  \item Primarily in a team responsible for a high-volume, mission-critical beneficiaries service with strong emphasis on resilience, throughput, and observability, maintaining SLAs of 99.99\% availability.
+  \item Scoped the requirements and organised an ongoing rewrite of a tier-0 beneficiaries service from Ruby to Java Spring Boot, using the strangler pattern and Istio Layer 7 routing to ensure high availability.
+  \item Led enhanced data validations for beneficiaries, written in Java and Spring Boot, which lowered manual requests for information from downstream payment providers by 80\%, protecting key partner relationships whilst ensuring legal compliance of payments.
+  \item Contributed to the team's adoption of event-driven design via Kafka for inter-service communication, improving decoupling and scalability. Used the outbox pattern for reliable, idempotent third-party communication.
+  \item Designed and implemented a Kafka and Debezium-powered archiving system to streamline the platform's largest database.
+  \item Championed Agile practices including pair programming, clean code, agile ceremonies, and knowledge-sharing sessions.
+\end{itemize}
+\subrole{Full Stack Software Engineer}{November 2019 -- April 2022}
+\begin{itemize}
+  \item Built a scalable Anti-Money Laundering system with RabbitMQ, Elasticsearch, Ruby on Rails and Vue.js.
+  \item Designed an API-first customer onboarding platform adhering to JSON:API standards with a white-labelled React/Next.js frontend.
+  \item Designed a contract-driven CI/CD pipeline using Pact and Jenkins.
+\end{itemize}
+
+\role{Workshare Ltd}{London, UK}{Junior Software Engineer}{November 2017 -- November 2019}
+\begin{itemize}
+  \item Developed backend features for Workshare Transact, a secure web-based file-sharing system for lawyers, written in Ruby on Rails.
+  \item Developed front-end components in React.
+  \item Diagnosed high-priority production issues, performed root-cause analysis, and implemented solutions to prevent recurrence in time-sensitive legal workflows.
+\end{itemize}
+
+\role{KPMG, UK}{London, UK}{Financial Services Audit Associate}{October 2014 -- January 2017}
+\begin{itemize}
+  \item Analysed financial controls and risk assessments across banking and insurance clients.
+  \item Developed strong analytical reasoning and quantitative audit skills.
+\end{itemize}
+
+\section*{Skills}
+\skill{Languages}{Java, Python, Ruby, JavaScript, TypeScript, SQL}
+\skill{Backend \& Systems}{Spring Boot, Ruby on Rails, Kafka, Debezium, Elasticsearch, RabbitMQ}
+\skill{Cloud \& DevOps}{AWS (EC2, RDS, S3), Docker, Kubernetes, Istio, Jenkins, Git, Datadog}
+\skill{Frontend}{React, Next.js, Vue.js}
+\skill{Practices}{Test-Driven Development (TDD), pair programming, Agile, CI/CD}
+
+\newpage
+\section*{Academic \& Technical Preparation for AI}
+Coming from an industry-focused background, to compensate for having a non-engineering undergraduate degree, I undertook targeted academic coursework to bridge into the theoretical and quantitative demands of graduate-level AI.
+
+\vspace{6pt}
+\education{Advanced Probability and Statistical Methods}{Coursera, Online}{Johns Hopkins University}{Nov 2025 -- Dec 2025}
+\begin{itemize}
+  \item Studied joint distributions, independence, expectation and covariance, the central limit theorem, hypothesis testing, regression analysis, and stochastic processes.
+\end{itemize}
+
+\education{Foundations of Probability and Random Variables}{Coursera, Online}{Johns Hopkins University}{Oct 2025 -- Nov 2025}
+\begin{itemize}
+  \item Covered combinatorics, conditional probability, independence, Bayes' rule, discrete and continuous random variables, distribution families, expectation, and variance.
+  \item Applied concepts programmatically using Python, NumPy, and Pandas.
+\end{itemize}
+
+\education{Linear Algebra from Elementary to Advanced}{Coursera, Online}{Johns Hopkins University}{Aug 2025 -- Oct 2025}
+\begin{itemize}
+  \item Completed a linear algebra specialisation covering linear systems, matrix algebra, determinants, eigenvectors, orthogonality, and diagonalisation.
+  \item Supplemented learning with MIT OpenCourseWare lectures focused on geometric intuition behind SVD and eigenstructure.
+\end{itemize}
+
+\section*{Education}
+\education{Imperial College London}{London, UK}{Professional Certificate in Machine Learning \& AI}{Dec 2025 -- Present}
+\begin{itemize}
+  \item Twenty-five-week online professional certificate covering machine learning and AI foundations through advanced methods.
+  \item Topics include probability and statistics, model evaluation, decision trees, SVMs, unsupervised learning, neural networks, and reinforcement learning.
+  \item Applying Python-based workflows to build and evaluate machine-learning models in business-relevant contexts.
+\end{itemize}
+
+\education{Makers Academy, UK}{London, UK}{}{June 2017 -- Sept 2017}
+\begin{itemize}
+  \item Completed a full-time bootcamp focused on Ruby, JavaScript, web development, TDD, and agile methodologies.
+  \item Capstone: implemented a Ruby-based single-layer perceptron with gradient-based weight updates, activation functions, and a training pipeline.
+\end{itemize}
+
+\education{King's College London}{London, UK}{BSc Business Management (Attainment: Upper Second Honours)}{September 2011 -- May 2014}
+
+\end{document}

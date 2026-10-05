@@ -1,0 +1,57 @@
+\usepackage[letterpaper,top=0.44in,bottom=0.42in,left=0.50in,right=0.50in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[scaled=0.94]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\tabcolsep}{0pt}
+\emergencystretch=1.5em
+
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}[\vspace{1pt}\titlerule]
+\titlespacing*{\section}{0pt}{7pt}{5pt}
+
+\setlist[itemize]{leftmargin=1.35em,itemsep=0.7pt,topsep=2pt,parsep=0pt,partopsep=0pt}
+
+\newcommand{\cvheader}{%
+  \begin{center}
+    {\Huge\bfseries Alistair Kung}\\[-1pt]
+    {\Large Software Engineer}\\[5pt]
+    \begin{tabularx}{\textwidth}{@{}XcX@{}}
+      \href{mailto:alistairckung@gmail.com}{alistairckung@gmail.com} &
+      \href{https://github.com/alistairkung}{github.com/alistairkung} &
+      \hfill\href{https://linkedin.com/in/alistair-kung}{linkedin.com/in/alistair-kung}
+    \end{tabularx}
+  \end{center}
+  \vspace{-4pt}\hrule\vspace{1pt}
+}
+
+\newcommand{\role}[4]{%
+  \begin{tabularx}{\textwidth}{@{}Xr@{}}
+    \textbf{#1} & \textbf{#2}\\
+    \textit{#3} & \textit{#4}
+  \end{tabularx}\vspace{-2pt}
+}
+
+\newcommand{\subrole}[2]{%
+  \begin{tabularx}{\textwidth}{@{}Xr@{}}
+    \textit{#1} & \textit{#2}
+  \end{tabularx}\vspace{-2pt}
+}
+
+\newcommand{\education}[4]{%
+  \begin{tabularx}{\textwidth}{@{}Xr@{}}
+    \textbf{#1} & \textbf{#2}\\
+    \textit{#3} & \textit{#4}
+  \end{tabularx}\vspace{-2pt}
+}
+
+\newcommand{\skill}[2]{\textbf{#1:} #2\\}
+
