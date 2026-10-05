@@ -1,0 +1,79 @@
+\documentclass[11pt]{article}
+\input{cv-style.tex}
+
+\begin{document}
+\cvheader
+
+\section*{Profile}
+Experienced software engineer with a background in backend platforms, distributed systems, production web systems, and software quality. Developing deeper specialisation in AI/ML through postgraduate study and practical AI engineering, with particular interest in evaluating where probabilistic systems complement deterministic software and testing practices.
+
+\section*{Experience}
+\role{Currencycloud Ltd/Visa Ltd (Post Acquisition)}{London, UK}{Software Engineer (Visa Ltd. Aligned Role: Senior Software Engineer)}{May 2023 -- Sept 2025}
+\begin{itemize}
+  \item Worked on a high-volume, mission-critical beneficiaries service, with emphasis on resilience, throughput, observability, and maintaining 99.99\% availability SLAs.
+  \item Designed and evolved automated testing strategies for production financial systems, applying test-pyramid principles across unit, integration, end-to-end, contract, and mutation testing to balance release confidence, feedback speed, and maintainability.
+  \item Scoped and organised an ongoing rewrite of a tier-0 beneficiaries service from Ruby to Java Spring Boot, using the strangler pattern and Istio Layer 7 routing to maintain availability during migration.
+  \item Led enhanced beneficiary data validations in Java and Spring Boot, lowering manual information requests from downstream payment providers by 80\% while supporting payment compliance.
+  \item Used Kafka and the outbox pattern to achieve reliable, idempotent delivery to external providers; also designed a Kafka and Debezium archiving system for the platform's largest database.
+  \item Used TDD and CI/CD quality gates to keep changes testable and releasable, including mutation testing to assess test effectiveness beyond coverage alone.
+\end{itemize}
+
+\subrole{Full Stack Software Engineer}{November 2019 -- April 2022}
+\begin{itemize}
+  \item Built a scalable Anti-Money Laundering system using RabbitMQ, Elasticsearch, Ruby on Rails, and Vue.js.
+  \item Designed an API-first customer onboarding platform adhering to JSON:API standards, with a white-labelled frontend built in React and Next.js.
+  \item Introduced consumer-driven contract testing with Pact across service boundaries and integrated it with Jenkins. This enabled independent API-compatibility checks with less reliance on slower end-to-end environments.
+\end{itemize}
+
+\role{Workshare Ltd}{London, UK}{Junior Software Engineer}{November 2017 -- November 2019}
+\begin{itemize}
+  \item Developed Ruby on Rails backend features and React components for Workshare Transact, a secure web-based file-sharing system for lawyers.
+  \item Diagnosed high-priority production issues, performed root-cause analysis, and implemented regression-prevention changes in time-sensitive legal workflows.
+\end{itemize}
+
+\role{KPMG, UK}{London, UK}{Financial Services Audit Associate}{October 2014 -- January 2017}
+\begin{itemize}
+  \item Analysed financial controls and risk assessments across banking and insurance clients.
+\end{itemize}
+
+\newpage
+\section*{Skills}
+\skill{Languages}{Java, Python, Ruby, JavaScript, TypeScript, SQL}
+\skill{Backend \& Systems}{Spring Boot, Ruby on Rails, Kafka, Debezium, Elasticsearch, RabbitMQ; distributed and event-driven systems}
+\skill{Testing \& Quality}{TDD, test-pyramid design, unit, integration and end-to-end testing, consumer-driven contract testing (Pact), mutation testing, CI/CD quality gates}
+\skill{AI/ML Engineering}{Python, structured LLM outputs, deterministic validation, evaluation design, precision and recall measurement}
+\skill{Cloud \& DevOps}{AWS (EC2, RDS, S3), Docker, Kubernetes, Istio, Jenkins, Git, Datadog}
+\skill{Web}{React, Next.js, Vue.js; API-first application design}
+
+\section*{Selected Projects}
+\textbf{Private Client Graph}\\[-1pt]
+\textit{LLM information extraction and evaluation system}\vspace{-2pt}
+\begin{itemize}
+  \item Built an LLM-based pipeline to extract family and trust relationships from professional documents. Recorded explicit evidence provenance for each relationship and kept probabilistic extraction separate from deterministic validation, normalisation, and graph construction.
+  \item Designed an evaluation harness comparing generated outputs with hidden ground truth using precision, recall, and provenance accuracy, with deterministic tests around non-probabilistic system behaviour.
+\end{itemize}
+
+\section*{Education}
+\education{The Chinese University of Hong Kong}{Hong Kong}{MSc Artificial Intelligence}{Sep 2026 -- Present}
+\begin{itemize}
+  \item Postgraduate study across artificial intelligence, machine learning, NLP, generative AI, and agentic systems.
+\end{itemize}
+
+\education{Imperial College London}{London, UK}{Professional Certificate in Machine Learning \& Artificial Intelligence}{Dec 2025 -- Jun 2026}
+\begin{itemize}
+  \item Completed practical Python/ML study covering supervised and unsupervised learning, model evaluation, decision trees, support vector machines, neural networks, reinforcement learning, probability, and statistics.
+\end{itemize}
+
+\education{Additional Technical Coursework - Johns Hopkins University}{Coursera, Online}{Linear Algebra; Probability \& Random Variables; Advanced Probability \& Statistical Methods}{Aug 2025 -- Dec 2025}
+\begin{itemize}
+  \item Coursework in mathematical foundations for machine learning, including matrix methods, random variables, statistical inference, regression, and stochastic processes.
+\end{itemize}
+
+\education{Makers Academy, UK}{London, UK}{Full-time Software Development Bootcamp}{June 2017 -- Sept 2017}
+\begin{itemize}
+  \item Focused on Ruby, JavaScript, web development, TDD, and agile methods; built a Ruby-based single-layer perceptron and training pipeline.
+\end{itemize}
+
+\simpleeducation{King's College London}{London, UK}{BSc Business Management (Upper Second-Class Honours)}{September 2011 -- May 2014}
+
+\end{document}

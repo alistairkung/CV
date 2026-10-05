@@ -14,6 +14,7 @@
 \setlength{\parskip}{0pt}
 \setlength{\tabcolsep}{0pt}
 \emergencystretch=1.5em
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
 
 \titleformat{\section}{\Large\bfseries}{}{0pt}{}[\vspace{1pt}\titlerule]
 \titlespacing*{\section}{0pt}{7pt}{5pt}
@@ -24,7 +25,7 @@
   \begin{center}
     {\Huge\bfseries Alistair Kung}\\[-1pt]
     {\Large Software Engineer}\\[5pt]
-    \begin{tabularx}{\textwidth}{@{}XcX@{}}
+    \begin{tabularx}{\textwidth}{@{}YcY@{}}
       \href{mailto:alistairckung@gmail.com}{alistairckung@gmail.com} &
       \href{https://github.com/alistairkung}{github.com/alistairkung} &
       \hfill\href{https://linkedin.com/in/alistair-kung}{linkedin.com/in/alistair-kung}
@@ -34,24 +35,30 @@
 }
 
 \newcommand{\role}[4]{%
-  \begin{tabularx}{\textwidth}{@{}Xr@{}}
+  \begin{tabularx}{\textwidth}{@{}Yr@{}}
     \textbf{#1} & \textbf{#2}\\
     \textit{#3} & \textit{#4}
   \end{tabularx}\vspace{-2pt}
 }
 
 \newcommand{\subrole}[2]{%
-  \begin{tabularx}{\textwidth}{@{}Xr@{}}
+  \begin{tabularx}{\textwidth}{@{}Yr@{}}
     \textit{#1} & \textit{#2}
   \end{tabularx}\vspace{-2pt}
 }
 
 \newcommand{\education}[4]{%
-  \begin{tabularx}{\textwidth}{@{}Xr@{}}
+  \begin{tabularx}{\textwidth}{@{}Yr@{}}
     \textbf{#1} & \textbf{#2}\\
     \textit{#3} & \textit{#4}
   \end{tabularx}\vspace{-2pt}
 }
 
-\newcommand{\skill}[2]{\textbf{#1:} #2\\}
+\newcommand{\simpleeducation}[4]{%
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lr@{}}
+    \textbf{#1} & \textbf{#2}\\
+    \textit{#3} & \textit{#4}
+  \end{tabular*}\par\vspace{-2pt}
+}
 
+\newcommand{\skill}[2]{\textbf{#1:} #2\par}
